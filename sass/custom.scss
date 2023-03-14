@@ -1,0 +1,13 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+// Include any default variable overrides here (though functions won't be available)
+$font-family-base:'Lato', sans-serif;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+.container-chat {
+    overflow-y: scroll;
+    height: calc(100vh - 160px);
+}

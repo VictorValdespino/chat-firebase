@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="./sass/custom.css" />
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyANuB0bmI3TwZY10aDdA2CTLno3KC1w3oA",
+        authDomain: "practicachat-fe480.firebaseapp.com",
+        projectId: "practicachat-fe480",
+        storageBucket: "practicachat-fe480.appspot.com",
+        messagingSenderId: "1035709239587",
+        appId: "1:1035709239587:web:d6970be757b462d3d73c96",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <header>
+      <navbar class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand" id="nombreUsuario"> BCHAT </a>
+          <div>
+            <button class="btn btn-primary" id="btnIngreso">Ingresar</button>
+            <button class="btn btn-danger" id="btnCerrar">Cerrar Sesión</button>
+          </div>
+        </div>
+      </navbar>
+    </header>
+
+    <main class="container py-3 container-chat" id="contenidoWeb">
+     <!--<div class="text-start">
+        <span class="badge bg-secondary">El:</span>
+      </div>
+      <div class="text-end">
+        <span class="badge bg-info">yo:</span>
+      </div>--> 
+    </main>
+
+    <form id="formulario" class="container mb-2 fixed-bottom">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="..."
+        id="formTexto"
+      />
+      <button class="btn btn-dark w-100 mt-2" type="submit">enviar</button>
+    </form>
+
+    <!-- ========== Start js ========== -->
+
+  
+
+    <script src="./app/index.js"></script>
+    <!-- ========== End js ========== -->
+  </body>
+</html>
